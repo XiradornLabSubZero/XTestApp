@@ -1,5 +1,5 @@
 # App in Jade/Sass/Js + GruntJS + Cordova/Phonegap.
-*****
+------------------------  
 #### Questa app è stata realizzata in Jade Sass e Js.<br>Compilazione preprocessori tramite gruntjs.<br>Compilazione App tramite cordova su Android.
 
 Questa applicazione è definibile come hybrid app che in sostanza è una sorta di ponte tra le app native e un applicativo web.  
@@ -9,7 +9,7 @@ L'applicazione completa, poi, viene compilata tramite phogap/cordova per i Siste
 **Scopo Primario:** Servirà da semplice testing per una sempre più complessa applicazione.  
 
 **Descrizione App:** Il compito della seguente è quello di contare punteggi e di generare tiri di dadi di varia tipologia
-*****  
+------------------------  
 # Installazione Componenti Base
 ##### Questa procedura è per coloro che vogliono costruire la propria app da questo codice
 
@@ -27,7 +27,7 @@ Per seguente test sono richiesti:
 * [Apacke ANT][] - Fondamentale per la compilazione. Anche questa potete trovarla per la vostra piattaforma
 * [Ryby + RubyGem][] - Fondamentale per l'elaborazione di JADE SASS e altri componenti. Anche in questo caso installazione cross platform
 
-*****  
+------------------------  
 
 ## Settaggi Richiesti
 Prima di poter procedere con la VOSTRA compilazione mi raccomando di configurare correttamente le variabili d'ambiente per i seguenti package
@@ -35,7 +35,7 @@ Prima di poter procedere con la VOSTRA compilazione mi raccomando di configurare
 * ANDROID -> ANDROID_HOME (percorso ANDROID SDK)
 * APACHE ANT -> ANT (percorso APACHE ANT)
 
-*****  
+------------------------  
 
 ## Installazione Gems
 Da terminale/console installiamo le seguenti gem usando la serie di comandi sotto:  
@@ -43,15 +43,16 @@ Da terminale/console installiamo le seguenti gem usando la serie di comandi sott
 ` gem install jade `  
 *su linux/mac va preceduta da* ` sudo `  
 
-*****  
+------------------------  
 
 ## Installazione Componenti NPM e BOWER
 Da terminale/console installiamo le seguenti package globali:
 ` npm install -g bower grunt-cli `  
 *su linux/mac va preceduta da* ` sudo `. ` -g ` sta per globale e lo si può scrivere come ` --globals `
 
-*****
-*****
+------------------------  
+
+------------------------  
 
 # Installazione Componenti APP
 #### Questa parte riguarda l'installazione delle componenti interne
@@ -69,8 +70,9 @@ Queste due aperazioni provvederanno a scaricare tutti i componenti fondamentali
 che usa la stessa app per essere compilata in codice utile alla poi compilazione
 effettiva come app in formato *qualcosa.apk* nel caso di Android.
 
-*****
-*****
+------------------------  
+
+------------------------  
 
 # Building su Cordova/Phonegap
 Per contruire la nostra applicazione dobbiamo, come prima cosa, inserire la nostra piattaforma
