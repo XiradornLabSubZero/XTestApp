@@ -1,0 +1,156 @@
+<!doctype html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="format-detection", content="telephone=no")
+		meta(name="msapplication-tap-highlight", content="no")
+		meta(name="viewport", content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		
+		title D&amp;d Tracker - GreenCat Division - Xiradorn Lab
+		
+		link(rel="stylesheet", href="assets/css/main.css")
+		link(rel="shortcut icon", href="assets/img/icon.png", type="image/png")
+	body
+		nav.navbar.navbar-fixed-top.navbar-inverse
+			.container
+				.navbar-header
+					button(type="button", data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false").navbar-toggle.collapsed
+						span.sr-only Toggle Navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a(href="#").navbar-brand
+						img(src="assets/img/logo.png").ddlogo
+				.collapse.navbar-collapse#bs-example-navbar-collapse-1
+					ul.nav.navbar-nav
+						li.active: p.navbar-text D&amp;d Tracker - GreenCat
+						
+		.container.text-center.xjumbotron
+			.row
+				.col-md-12
+					img(src="assets/img/logo.png").img-responsive.center-block.ddlogo-main
+					h1.xlogotxt-margin-top D&amp;d Tracker
+					h4 Xiradorn Lab - GreenCat Division
+		
+		.container.text-center
+			.row
+				.col-md-6
+					.jumbotron
+						.container
+							h3 D&amp;d Point Tracker
+							.row
+								.col-md-12
+									h3#totalPV 20
+									h5 Punti vita totali
+					
+					.col-md-12
+						h4 Resetta PV a 20
+						div(role="group").btn-group.btn-group-justified
+							.btn-group
+								button(type="button", role="button", resetpoint="20").btn.btn-warning.resetpoint Reset PV
+									
+					.col-md-12
+						h4 Aggiungi / Sottrai 1 PV
+						div(role="group").btn-group.btn-group-justified
+							.btn-group
+								button(type="button", role="button", point="+1").btn.btn-success.punto +1
+							.btn-group
+								button(type="button", role="button", point="-1").btn.btn-danger.punto -1
+					
+					.col-md-12
+						h4 Aggiungi / Sottrai 5 PV
+						div(role="group").btn-group.btn-group-justified
+							.btn-group
+								button(type="button", role="button", point="+5").btn.btn-success.punto +5
+							.btn-group
+								button(type="button", role="button", point="-5").btn.btn-danger.punto -5
+					
+					.col-md-12
+						h4 Aggiungi / Sottrai 10 PV
+						div(role="group").btn-group.btn-group-justified
+							.btn-group
+								button(type="button", role="button", point="+10").btn.btn-success.punto +10
+							.btn-group
+								button(type="button", role="button", point="-10").btn.btn-danger.punto -10
+								
+					.col-md-12
+						h4 Aggiungi / Sottrai 20 PV
+						div(role="group").btn-group.btn-group-justified
+							.btn-group
+								button(type="button", role="button", point="+20").btn.btn-success.punto +20
+							.btn-group
+								button(type="button", role="button", point="-20").btn.btn-danger.punto -20
+				.col-md-6
+					.jumbotron
+						.container
+							h3 D&amp;d Dice Tracker
+							.row
+								.col-md-3
+									h3(dicetarget="4").dicetarget -
+									h5 Dado da 4 (1-4)
+								.col-md-3
+									h3(dicetarget="6").dicetarget -
+									h5 Dado da 6 (1-6)
+								.col-md-3
+									h3(dicetarget="8").dicetarget -
+									h5 Dado da 1 (1-8)
+								.col-md-3
+									h3(dicetarget="10").dicetarget -
+									h5 Dado da 10 (0-9)
+							.row
+								.col-md-4
+									h3(dicetarget="12").dicetarget -
+									h5 Dado da 12 (1-12)
+								.col-md-4
+									h3(dicetarget="20").dicetarget -
+									h5 Dado da 20 (1-20)
+								.col-md-4
+									h3(dicetarget="100").dicetarget -
+									h5 Dado da 100 (00-90)
+					
+					h4 Resetta Dadi a -
+					.col-md-12
+						div(role="group").btn-group.btn-group-justified
+							.btn-group
+								button(type="button", role="button", resetdice="all").btn.btn-warning.resetdice Reset Dadi
+					
+					h2 Dadi
+					.col-md-12
+						div(role="group").btn-group.btn-group-justified
+							.btn-group
+								button(type="button", role="button", dice="all").btn.btn-success.dice Tutti i dadi
+									
+					.col-md-12
+						div(role="group").btn-group.btn-group-justified
+							.btn-group
+								button(type="button", role="button", dice="4").btn.btn-default.dice Dado da 4
+							.btn-group
+								button(type="button", role="button", dice="6").btn.btn-default.dice Dado da 6
+					
+					.col-md-12
+						div(role="group").btn-group.btn-group-justified
+							.btn-group
+								button(type="button", role="button", dice="8").btn.btn-default.dice Dado da 8
+							.btn-group
+								button(type="button", role="button", dice="10").btn.btn-default.dice Dado da 10
+								
+					.col-md-12
+						div(role="group").btn-group.btn-group-justified
+							.btn-group
+								button(type="button", role="button", dice="12").btn.btn-default.dice Dado da 12
+							.btn-group
+								button(type="button", role="button", dice="20").btn.btn-default.dice Dado da 20
+					
+					.col-md-12
+						div(role="group").btn-group.btn-group-justified
+							.btn-group
+								button(type="button", role="button", dice="100").btn.btn-default.dice Dado da 100
+									
+		.container.text-center
+			p.copyright Sir Xiradorn - 2015 &copy; 
+				a(href="http://xiradorn.it", alt="Xiradorn Lab") Xiradorn Lab - GreenCat Division
+	
+		script(type="text/javascript", src="cordova.js")
+		script(type="text/javascript", src="assets/js/main.js")
+		
