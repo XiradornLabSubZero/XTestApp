@@ -29,15 +29,15 @@ Per seguente test sono richiesti:
 
 ------------------------  
 
-## Settaggi Richiesti
-Prima di poter procedere con la VOSTRA compilazione mi raccomando di configurare correttamente le variabili d'ambiente per i seguenti package
-* JAVA -> JAVA (percorso JAVA)
-* ANDROID -> ANDROID_HOME (percorso ANDROID SDK)
-* APACHE ANT -> ANT (percorso APACHE ANT)
+## Settaggi Richiesti  
+Prima di poter procedere con la VOSTRA compilazione mi raccomando di configurare correttamente le variabili d'ambiente per i seguenti package  
+* JAVA -> JAVA (percorso JAVA)  
+* ANDROID -> ANDROID_HOME (percorso ANDROID SDK)  
+* APACHE ANT -> ANT (percorso APACHE ANT)  
 
 ------------------------  
 
-## Installazione Gems
+## Installazione Gems  
 Da terminale/console installiamo le seguenti gem usando la serie di comandi sotto:  
 ` gem install sass `  
 ` gem install jade `  
@@ -45,17 +45,19 @@ Da terminale/console installiamo le seguenti gem usando la serie di comandi sott
 
 ------------------------  
 
-## Installazione Componenti NPM e BOWER
-Da terminale/console installiamo le seguenti package globali:
+## Installazione Componenti NPM e BOWER  
+Da terminale/console installiamo le seguenti package globali:  
+
 ` npm install -g bower grunt-cli `  
+
 *su linux/mac va preceduta da* ` sudo `. ` -g ` sta per globale e lo si può scrivere come ` --globals `
 
 ------------------------  
 
 ------------------------  
 
-# Installazione Componenti APP
-#### Questa parte riguarda l'installazione delle componenti interne
+# Installazione Componenti APP  
+#### Questa parte riguarda l'installazione delle componenti interne  
 
 Avendo fatto quanto detto sopra, dovreste essere in possesso di npm e bower.  
 L'applicazione possiede dei moduli interni che vanno installati. 
@@ -74,16 +76,19 @@ effettiva come app in formato *qualcosa.apk* nel caso di Android.
 
 ------------------------  
 
-# Building su Cordova/Phonegap
+# Building su Cordova/Phonegap  
 Per contruire la nostra applicazione dobbiamo, come prima cosa, inserire la nostra piattaforma
 ovvero il sistema per cui vogliamo compilare. Usiamo quindi questo comando:  
+
 ` cordova platform add android `  
 
-Fatto questo passiamo alla ultima fase per la costruzione della nostra app (in questo caso su Android) 
+Fatto questo passiamo alla ultima fase per la costruzione della nostra app (in questo caso su Android)  
+
 ` cordova build android `  
 
 Fatto ciò potremo (finalmente) trovare nella cartella della nostra piattaforma.  
 Nel caso di Android questa sarà visibile in:  
+
 ` platforms\android\build\outputs\apk `
 
 [Nodejs]: https://nodejs.org/en/ "NodeJs"
